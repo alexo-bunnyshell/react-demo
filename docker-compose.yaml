@@ -1,0 +1,11 @@
+services:
+   bunny:
+    build: .
+    ports:
+        - '80:80'
+    # We can override any env values here.
+    # By default the .env in the project root will be loaded as the environment for all containers
+    environment:
+        APP_DEBUG: "true"
+        APP_SECRET: "test_sectre"
+       
